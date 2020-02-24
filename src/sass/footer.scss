@@ -1,0 +1,58 @@
+.footer {
+  align-self: end;
+  border-top: inset 1px rgba(243, 243, 243, .5);
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 1fr .1fr 1fr;
+  align-items: center;
+  color: #979797;
+  text-shadow: 0 7px 7px rgba(37, 37, 37, 0.5);
+  box-shadow: 0 -2px 7px rgba(37, 37, 37, 0.5);
+
+  @media (max-width: 500px) {
+    text-align: center;
+    height: 2rem;
+  }
+
+
+  p {
+    justify-self: end;
+
+    .name {
+      margin-right: .5rem;
+    }
+
+    .year {
+      margin-left: .5rem;
+    }
+  }
+
+
+
+}
+
+.icon-link {
+  margin-right: 1.5rem;
+}
+
+.cp-icon {
+  color: #f3f3f3
+}
+
+.fa-icon {
+  font-size: 2.5rem;
+  transition: all .2s;
+  color: #f3f3f3;
+
+  &:hover {
+    transform: translateY(-10%);
+    cursor: pointer;
+  }
+}
+
+.divider {
+  width: 1px;
+  height: 90%;
+  border-right: outset 1px rgba(243, 243, 243, .5);
+  justify-self: center;
+}

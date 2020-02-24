@@ -5,5 +5,26 @@
  */
 
 module.exports = {
-  /* Your site config here */
-}
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: ['src/sass']
+      }
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Tomorrow`,
+            variants: [`200`]
+          },
+          {
+            family: `Montserrat`
+          }
+        ]
+      }
+    }
+  ]
+};

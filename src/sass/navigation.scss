@@ -1,0 +1,37 @@
+.nav-list {
+  display: flex;
+  height: 5rem;
+
+  @media (max-width: 500px) {
+    height: 3rem;
+  }
+
+}
+
+.nav-item {
+  border: outset 1px rgba(243, 243, 243, .5);
+  border-top: none;
+  flex-grow: 1;
+  display: flex;
+  border-left: none;
+  transition: all .3s;
+
+  &:hover {
+    background: #494949;
+  }
+
+  a {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text-shadow: 0 7px 7px rgba(37, 37, 37, 0.5);
+    color: #979797;
+    box-shadow: 0 7px 7px rgba(37, 37, 37, 0.5);
+
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
