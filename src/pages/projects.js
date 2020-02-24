@@ -14,7 +14,7 @@ const ProjectsPage = () => {
       alt: "a calculator",
       desc:
         "I decided to use this project to put into practice what I have learnt about React and experiement with CSS in JS using the styled components library. In addition to learning react, it also helped me realise the benefits of using multiple git branches during development.",
-      live: "https://react-calculator-omega.now.sh//",
+      liveURL: "https://react-calculator-omega.now.sh//",
       github: "https://github.com/crichmond-clark/react-calculator",
     },
     {
@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       alt: "conquer template clone",
       desc:
         "I created this project using HTML and Sass using CSS Grid for the responsive layout element rather than the original template choice of bootstrap. I have personally found CSS Grid to be the most intuitive and simple way to create responsive layouts in addition to using flexbox for some more niche use cases such as navigation bars.",
-      live: "https://crichmond-clark.github.io/conquer-template-clone",
+      liveURL: "https://crichmond-clark.github.io/conquer-template-clone",
       github: "https://github.com/crichmond-clark/conquer-template-clone",
     },
   ]
@@ -38,7 +38,7 @@ const ProjectsPage = () => {
             img={project.img}
             alt={project.alt}
             desc={project.desc}
-            live={project.live}
+            liveURL={project.liveURL}
             github={project.github}
           />
         ))}

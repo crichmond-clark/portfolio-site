@@ -1,13 +1,13 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTv } from '@fortawesome/free-solid-svg-icons';
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import '../sass/projectCard.scss';
+import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTv } from "@fortawesome/free-solid-svg-icons"
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons"
+import "../sass/projectCard.scss"
 
-const ProjectCard = ({ title, img, alt, desc, live, github }) => {
+const ProjectCard = ({ title, img, alt, desc, liveURL, github }) => {
   return (
     <div className="card">
-      <a href={live} className="img-link">
+      <a href={liveURL} className="img-link">
         <div class="img-div">
           <img src={img} alt={alt} />
         </div>
@@ -18,7 +18,7 @@ const ProjectCard = ({ title, img, alt, desc, live, github }) => {
           <p className="card-desc">{desc}</p>
         </div>
         <div className="links">
-          <a href={live}>
+          <a href={liveURL}>
             <div className="card-link card-link-1">
               <FontAwesomeIcon icon={faTv} />
               <p>Live Demo</p>
@@ -33,7 +33,7 @@ const ProjectCard = ({ title, img, alt, desc, live, github }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard
