@@ -27,9 +27,7 @@ const IndexPage = () => {
 
   return (
     <div className="container">
-      <Helmet>
-      <script src="https://cmp.osano.com/Azyw5ISA0ipuZfJQ/a4a0e116-0a11-4f54-a918-48e7ff1f2ae8/osano.js"></script>
-      </Helmet>
+  
       <Navigation />
       <main className="main">
         <div>
