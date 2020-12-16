@@ -16,13 +16,20 @@ const AboutMePage = () => {
       <Navigation />
       <main className="about-me-main">
         <p className="about-me-p-1">
-          Hello, I'm a part-time 3rd year Computing & IT student studying at The
-          Open University. As well as a hopeful web developer. I have discovered
-          a passion for programming, the feeling of achievement when finally
+          Hello, I'm junior web developer as well as a part-time 3rd year Computing & IT student studying at The
+          Open University. I have a passion for learning and problem solving the feeling of achievement when finally
           finding a solution to a problem has left me hooked and wanting more.
         </p>
         <div className="tech-stack">
           <h2>My technology stack is</h2>
+          <div>
+            <FontAwesomeIcon icon={FaPython} className="icon" />
+            <p>Python</p>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={} className="icon" />
+            <p>Django</p>
+          </div>
           <div>
             <FontAwesomeIcon icon={faHtml5} className="icon" />
             <p>HTML5</p>
